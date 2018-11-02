@@ -16,7 +16,8 @@ import javax.annotation.Resource;
 @ContextConfiguration("classpath:applicationContext.xml")
 public class SpringDemo3 {
 
-    @Resource
+    //@Resource(name = "studentDao")
+    @Resource(name="studentDaoProxy")
     private StudentDao studentDao;
 
     @Test
@@ -28,5 +29,7 @@ public class SpringDemo3 {
         studentDao.delete();
 
     }
+
+
 
 }
