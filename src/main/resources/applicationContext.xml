@@ -14,6 +14,7 @@
         <property name="proxyInterfaces" value="com.imooc.aop.demo3.StudentDao"/>
         <!--采用拦截的名称-->
         <property name="interceptorNames" value="myBeforeAdvice"/>
+        <property name="optimize" value="true"></property>
     </bean>
 
 
